@@ -1,0 +1,88 @@
+body {
+    margin: 0;
+    font-family: 'Segoe UI';
+    background: linear-gradient(135deg, #8fd3f1, #2c5364);
+    color: rgb(7, 0, 10);
+}
+
+/* Container */
+.container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 20px;
+    height: 100vh;
+}
+
+/* Calculator */
+.calculator {
+    padding: 20px;
+    border-radius: 25px;
+    background: rgba(104, 230, 230, 0.08);
+    backdrop-filter: blur(15px);
+    box-shadow: 0 0 40px rgba(225, 223, 231, 0.915);
+}
+
+/* Display */
+.display {
+    background: rgb(253, 215, 215);
+    padding: 10px;
+    border-radius: 10px;
+    margin-bottom: 15px;
+}
+
+#result {
+    font-size: 30px;
+    color: #0e0c0c;
+    text-align: right;
+}
+
+/* Layout */
+.main {
+    display: flex;
+}
+
+.numbers {
+    display: grid;
+    grid-template-columns: repeat(3, 70px);
+    gap: 10px;
+}
+
+.operators, .scientific {
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+    margin-left: 10px;
+}
+
+/* Buttons */
+button {
+    height: 60px;
+    border-radius: 12px;
+    border: none;
+    cursor: pointer;
+    background: rgba(234, 233, 241, 0.1);
+    color: rgb(22, 21, 21);
+}
+
+button:hover {
+    background: #fc7aa5;
+    color: rgb(44, 10, 212);
+    box-shadow: 0 0 10px #1f055c;
+}
+
+/* History */
+.history {
+    width: 200px;
+    background: rgba(205, 248, 251, 0.6);
+    padding: 15px;
+    border-radius: 15px;
+    overflow-y: auto;
+}
+
+/* Toggle */
+.toggle {
+    position: absolute;
+    top: 20px;
+    right: 20px;
+}

@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<title>Pro Calculator</title>
+<link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+<div class="container">
+
+    <!-- Toggle -->
+    <button class="toggle" onclick="toggleTheme()">🌙</button>
+
+    <!-- Calculator -->
+    <div class="calculator">
+
+        <!-- Display -->
+        <div class="display">
+            <div id="expression"></div>
+            <div id="result">0</div>
+        </div>
+
+        <!-- Buttons -->
+        <div class="main">
+
+            <!-- Numbers -->
+            <div class="numbers">
+                <button onclick="append('7')">7</button>
+                <button onclick="append('8')">8</button>
+                <button onclick="append('9')">9</button>
+
+                <button onclick="append('4')">4</button>
+                <button onclick="append('5')">5</button>
+                <button onclick="append('6')">6</button>
+
+                <button onclick="append('1')">1</button>
+                <button onclick="append('2')">2</button>
+                <button onclick="append('3')">3</button>
+
+                <button onclick="append('0')">0</button>
+                <button onclick="append('.')">.</button>
+                <button class="equal" onclick="calculate()">=</button>
+            </div>
+
+            <!-- Operators -->
+            <div class="operators">
+                <button onclick="append('+')">+</button>
+                <button onclick="append('-')">−</button>
+                <button onclick="append('*')">×</button>
+                <button onclick="append('/')">÷</button>
+                <button onclick="sqrt()">√</button>
+                <button onclick="backspace()">⌫</button>
+                <button onclick="clearAll()">C</button>
+            </div>
+
+            <!-- Scientific -->
+            <div class="scientific">
+                <button onclick="append('Math.sin(')">sin</button>
+                <button onclick="append('Math.cos(')">cos</button>
+                <button onclick="append('Math.log(')">log</button>
+                <button onclick="append('Math.PI')">π</button>
+            </div>
+
+        </div>
+    </div>
+
+    <!-- History -->
+    <div class="history">
+        <h3>History</h3>
+        <ul id="historyList"></ul>
+    </div>
+
+</div>
+
+<script src="script.js"></script>
+</body>
+</html>
