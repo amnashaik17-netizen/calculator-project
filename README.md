@@ -60,3 +60,10 @@ The web version includes a **modern UI, glowing effects, and calculation history
 ---
 
 ## 📂 Project Structure
+calculator-project/
+│── calculator.py
+│── gui_calculator.py
+│── index.html
+│── style.css
+│── script.js
+│── README.md
