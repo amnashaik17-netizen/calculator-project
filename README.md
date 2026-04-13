@@ -67,3 +67,4 @@ calculator-project/
 │── style.css
 │── script.js
 │── README.md
+<img width="1366" height="720" alt="image" src="https://github.com/user-attachments/assets/fea43476-5a37-40c2-973d-9e63e895ced6" />
